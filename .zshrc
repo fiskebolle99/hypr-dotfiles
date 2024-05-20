@@ -14,7 +14,7 @@ alias hs="history | grep"
 
 alias icat="kitten icat"
 
-alias lf="lfrun"
+chpwd() eza -lAh --icons --color=always --group-directories-first
 
 # l/la/ll/ls replacements and fancifications
 alias l="eza -lah --icons --color=always"
