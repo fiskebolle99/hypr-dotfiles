@@ -14,6 +14,8 @@ alias hs="history | grep"
 
 alias icat="kitten icat"
 
+alias .zshrc="vim ~/.zshrc"
+
 chpwd() eza -lAh --icons --color=always --group-directories-first
 
 # l/la/ll/ls replacements and fancifications
@@ -28,9 +30,10 @@ alias hyprcfg="vim ~/.config/hypr/hyprland.conf"
 plugins=(git)
 
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
-source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:~/.local/bin
 export EDITOR=nvim
+source $ZSH/oh-my-zsh.sh
+
 
 #plugins
 source $HOME/.config/zsh/plugins/zsh-dirhistory/dirhistory.plugin.zsh
