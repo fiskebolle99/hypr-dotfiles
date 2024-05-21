@@ -41,6 +41,8 @@ alias ls="eza -x --icons --color=always"
 alias hyprcfg="vim ~/.config/hypr/hyprland.conf"
 alias .zshrc="vim ~/.zshrc"
 
+alias history="history 1"
+
 #                          __    
 #  _____ __ ___  ___  ____/ /____
 # / -_) \ // _ \/ _ \/ __/ __(_-<
