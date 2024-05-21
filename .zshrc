@@ -25,10 +25,6 @@ alias vim="nvim"
 alias update="sudo pacman -Syu"
 alias search="pacman -Ss"
 
-# history
-alias h="history"
-alias hs="history | grep"
-
 alias icat="kitten icat"
 
 # l/la/ll/ls replacements and fancifications
@@ -42,6 +38,8 @@ alias hyprcfg="vim ~/.config/hypr/hyprland.conf"
 alias .zshrc="vim ~/.zshrc"
 
 alias history="history 1"
+
+alias untar="tar -xvf"
 
 #                          __    
 #  _____ __ ___  ___  ____/ /____
