@@ -4,6 +4,12 @@
 # /_//_/___/_/\_\\__/ (_)__/___/_//_/_/  \__/ 
 #
 
+
+# pyenv init
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 
 # disable zsh default keybinds (such as ll/la etc.)
