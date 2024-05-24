@@ -1,9 +1,8 @@
-#    ____     __                  __          
-#   / _(_)__ / /_____    ___ ___ / /  ________
-#  / _/ (_-</  '_/ -_) _/_ /(_-</ _ \/ __/ __/
-# /_//_/___/_/\_\\__/ (_)__/___/_//_/_/  \__/ 
-#
-
+#░█▀▀░▀█▀░█▀▀░█░█░█▀▀░░░▀▀█░█▀▀░█░█░█▀▄░█▀▀
+#░█▀▀░░█░░▀▀█░█▀▄░█▀▀░░░▄▀░░▀▀█░█▀█░█▀▄░█░░
+#░▀░░░▀▀▀░▀▀▀░▀░▀░▀▀▀░░░▀▀▀░▀▀▀░▀░▀░▀░▀░▀▀▀
+# https://github.com/fiskebolle99/hypr-dotfiles/
+# ascii using https://www.asciiart.eu/text-to-ascii-art (FONT: Pagga, SIZE: 6 pt)
 
 # pyenv init
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -19,11 +18,9 @@ zstyle ':omz:*' aliases no
 autoload -U colors && colors	
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-#        ___                
-#  ___ _/ (_)__ ____ ___ ___
-# / _ `/ / / _ `(_-</ -_|_-<
-# \_,_/_/_/\_,_/___/\__/___/
-# 
+#░█▀█░█░░░▀█▀░█▀█░█▀▀░█▀▀░█▀▀
+#░█▀█░█░░░░█░░█▀█░▀▀█░█▀▀░▀▀█
+#░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀
 
 alias vim="nvim"
 
@@ -46,22 +43,18 @@ alias .zshrc="vim ~/.zshrc"
 alias history="history 1"
 
 alias untar="tar -xvf"
-
-#                          __    
-#  _____ __ ___  ___  ____/ /____
-# / -_) \ // _ \/ _ \/ __/ __(_-<
-# \__/_\_\/ .__/\___/_/  \__/___/
-#        /_/                                                                                          
+                                                                                       
+#░█▀▀░█░█░█▀█░█▀█░█▀▄░▀█▀░█▀▀
+#░█▀▀░▄▀▄░█▀▀░█░█░█▀▄░░█░░▀▀█
+#░▀▀▀░▀░▀░▀░░░▀▀▀░▀░▀░░▀░░▀▀▀
 
 export PATH=$PATH:~/.local/bin
 export EDITOR=nvim
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
-                               
-#  ___ ___  __ _____________ ___
-# (_-</ _ \/ // / __/ __/ -_|_-<
-#/___/\___/\_,_/_/  \__/\__/___/
-#                               
+#░█▀▀░█▀█░█░█░█▀▄░█▀▀░█▀▀░█▀▀
+#░▀▀█░█░█░█░█░█▀▄░█░░░█▀▀░▀▀█
+#░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀
 
 # have to source this after COMPDUMP or else it will throw garbage in ~
 source $ZSH/oh-my-zsh.sh
@@ -74,11 +67,9 @@ source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting
 # enables zoxide
 eval "$(zoxide init zsh)"
 
-#         _        
-#  __ _  (_)__ ____
-# /  ' \/ (_-</ __/
-#/_/_/_/_/___/\__/ 
-#                  
+#░█▄█░▀█▀░█▀▀░█▀▀
+#░█░█░░█░░▀▀█░█░░
+#░▀░▀░▀▀▀░▀▀▀░▀▀▀
 
 # does 'l' after every change of directory
 chpwd() eza -lAh --icons --color=always --group-directories-first
