@@ -9,14 +9,18 @@ if [ ! -d "$wallpaper_dir" ]; then
     exit 1
 fi
 
-# pick a random wallpaper from the directory
-wallpaper=$(find "$wallpaper_dir" -type f | shuf -n 1)
+# path to the file storing the last used wallpaper
+last_wallpaper_file="$HOME/.config/hypr/last_wallpaper"
 
-# check if a wallpaper was found
-if [ -z "$wallpaper" ]; then
-    echo "error: no wallpapers found in the directory: $wallpaper_dir"
-    exit 1
-fi
+# pick a random wallpaper that is not the same as the last one
+while true; do
+    wallpaper=$(find "$wallpaper_dir" -type f | shuf -n 1)
+    [ -f "$last_wallpaper_file" ] && last_wallpaper=$(cat "$last_wallpaper_file")
+    [ "$wallpaper" != "$last_wallpaper" ] && break
+done
+
+# store the current wallpaper as the last used wallpaper
+echo "$wallpaper" > "$last_wallpaper_file"
 
 # path to your hyprpaper configuration file
 hyprpaper_config_file="$HOME/.config/hypr/hyprpaper.conf"
