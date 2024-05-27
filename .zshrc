@@ -26,7 +26,7 @@ alias vim="nvim"
 
 # pacman
 alias update="sudo pacman -Syu"
-alias search="pacman -Ss"
+alias search="yay -Ss"
 
 alias icat="kitten icat"
 
